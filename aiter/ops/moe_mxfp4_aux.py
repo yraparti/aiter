@@ -8,6 +8,8 @@ from ..jit.core import compile_ops
 # Keep synchronized with moe_aux/codegen/gen_instances.py::SHAPES.
 MXFP4_MOE_SUPPORTED_SHAPES = frozenset(
     {
+        (128, 6144, 1536, 4),
+        (128, 6144, 768, 4),
         (385, 7168, 512, 9),
         (385, 7168, 1024, 9),
         (257, 7168, 512, 9),
